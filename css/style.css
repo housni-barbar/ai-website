@@ -1,0 +1,332 @@
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    background: black;
+    margin: 0;
+    direction: rtl;
+    color: #222;
+}
+
+
+header {
+    background: #384f67;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+/* بطاقة الطالب */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+    padding: 18px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18);
+}
+
+.card img {
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px 0;
+    color: #2d3e50;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/* الأقسام الإضافية */
+section.link,
+section.notes {
+    background: #fff;
+    margin: 30px auto;
+    padding: 18px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    max-width: 700px;
+}
+
+section h2 {
+    color: #2d3e50;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+section a {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+footer {
+    background: #2d3e50;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* قسم من نحن ومعلومات التواصل */
+.about,
+.contact {
+    background: #fff;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+    max-width: 900px;
+}
+
+.about p,
+.contact li {
+    line-height: 1.8;
+    font-size: 20px;
+    color: #444;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق قسم التطبيقات */
+.apps {
+    background: #fff;
+    margin: 40px auto;
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    max-width: 1100px;
+}
+
+.apps h2 {
+    color: #2d3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* تنسيق الجدول */
+.apps table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: #f7f7fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(44, 62, 80, 0.08);
+}
+
+.apps th,
+.apps td {
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.apps th {
+    background: #384f67;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #2d3e50;
+}
+
+.apps tr {
+    transition: background 0.2s;
+}
+
+.apps tr:not(.details):hover {
+    background: #e9f0fa;
+}
+
+.apps td button {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 18px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.apps td button:hover {
+    background: #384f67;
+}
+
+/* صف التفاصيل */
+.details {
+    background: #f0f4f8;
+    display: none;
+}
+
+.details img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #384f67;
+}
+
+/* قسم إضافة تطبيق */
+.form-section {
+    background: #fff;
+    width: 70%;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: block;
+    width: 100%;
+}
+
+label,
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2d3e50;
+    box-shadow: 0 0 5px rgba(45, 62, 80, 0.3);
+}
+
+.btns {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 8px;
+    padding: 8px 18px;
+    background-color: #2d3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #b4d4f7;
+    color: black;
+}
+
+/* نتيجة التحقق */
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.added-apps {
+    width: 90%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.added-apps h2 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 15px;
+}
+
+
+.delete-btn {
+    background-color: #c0392b;
+    margin-right: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+}

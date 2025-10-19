@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add App - AI Applications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/myFunctions.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>إضافة تطبيق جديد</h1>
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="aboutus.html">من نحن</a>
+            <a href="apps.html">التطبيقات</a>
+            <a href="add_app.html" class="active">إضافة تطبيق</a>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h2>نموذج ادخال بيانات</h2>
+        <form id="appForm">
+            <label">اسم التطبيق (بدون فرافات وبالانجليزية فقط):</label>
+                <input type="text" id="appName" placeholder="مثال : ChatGPT" required>
+
+                <label>اسم الشركة المطورة : (احرف اننجليزية فقط)</label>
+                <input type="text" id="company" placeholder="مثال : OpenAI" required>
+
+                <label>الموقع الالكتروني للتطبيق (URL)</label>
+                <input type="text" id="website" placeholder="مثال : https://www.example.com" required>
+
+                <label>هل التطبيق مجاني ؟</label>
+                <select id="isFree" required>
+                    <option value="">--- اختر ---</option>
+                    <option value="نعم">نعم</option>
+                    <option value="لا">لا</option>
+                </select>
+
+                <label>مجال الاستخدام </label>
+                <select id="category" required>
+                    <option value="">--- اختر مجال ---</option>
+                    <option value="التعليم">التعليم</option>
+                    <option value="الفن والتصميم">الترفيه</option>
+                    <option value="الروبوتات">الروبوتات</option>
+                    <option value="التجارة الإلكترونية">التجارة الإلكترونية</option>
+                    <option value="التحليل والبحث">التحليل والبحث</option>
+                </select>
+
+                <label>وصف مختصر عن التطبيق (اقل من 200 حرف)</label>
+                <textarea id="description" rows="4" placeholder="اكتب وصفاً مختصراً..." required></textarea>
+                <div class="btns">
+                    <button type="button" onclick="submitApp()">إرسال</button>
+                    <button type="reset">إعادة</button>
+                </div>
+        </form>
+        <p id="result" class="result"></p>
+
+    </section>
+     <footer>
+        <p>© 2025 جميع الحقوق محفوظة - مشروع مادة تصميم وتطوير تطبيقات الويب</p>
+    </footer>
+    
+</body>
+
+</html>

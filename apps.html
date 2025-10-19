@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - AI Applications</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>التطبيقات </h1>
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="aboutus.html">من نحن</a>
+            <a href="apps.html" class="active">التطبيقات</a>
+            <a href="add_app.html">إضافة تطبيق</a>
+        </nav>
+    </header>
+    <section class="apps">
+        <h2>قائمة التطبيقات</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>اسم التطبيق</th>
+                    <th>اسم الشركة المطورة</th>
+                    <th>مجال الاستخدام </th>
+                    <th>مجاني </th>
+                    <th>اظهار التفاصيل</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- التطبيق الاول  -->
+                <tr>
+                    <td>ChatGPT</td>
+                    <td>OpenAI</td>
+                    <td>التعلم - التواصل</td>
+                    <td>نعم</td>
+                    <td><button onclick="toggleDetails('details1')">عرض التفاصيل</button></td>
+                </tr>
+                <tr id="details1" class="details">
+                    <td colspan="5">
+
+                        <p><strong>عنوان الموقع الإلكتروني:</strong> <a
+                                href="https://chatgpt.com/">https://chatgpt.com/</a><br><br>
+                            <strong>وصف:</strong> مساعد ذكي يجيب على الأسئلة ويكتب النصوص ويشرح المفاهيم بلغة طبيعية.
+                            <br><br>
+                        <div class="video-wrapper">
+                            <video id="video-chatgpt" width="560" height="315" controls preload="none">
+                                <source src="videos/What is ChatGPT (a simple one minute overview)(360P).mp4"
+                                    type="video/mp4">
+                                متصفحك لا يدعم الفيديو.
+                            </video>
+                            <br><br><img src="images/CHATGPT.jpg" alt="ChatGPT" width="120"><br>
+                    </td>
+                </tr>
+                <!-- التطبيق الثاني -->
+                <tr>
+                    <td>Google Lens</td>
+                    <td>Google</td>
+                    <td>التعرف على الصور</td>
+                    <td>نعم</td>
+                    <td><button onclick="toggleDetails('details2')">عرض التفاصيل</button></td>
+                </tr>
+                <tr id="details2" class="details">
+                    <td colspan="5">
+
+                        <p><strong>عنوان الموقع الإلكتروني:</strong> <a
+                                href="https://lens.google">https://lens.google</a><br><br>
+                            <strong>وصف:</strong> تطبيق يستخدم الكاميرا للتعرّف على الأشياء والنصوص وترجمتها فورياً.
+                            <br><br>
+                        <div class="video-wrapper">
+                            <video id="video-chatgpt" width="560" height="315" controls preload="none">
+                                <source src="videos/172528-847499874_small.mp4" type="video/mp4">
+                                متصفحك لا يدعم الفيديو.
+                            </video>
+                            <br><br><img src="images/lens.jpg" alt="Google Lens" width="120"><br>
+                    </td>
+                </tr>
+                <!-- التطبيق الثالث -->
+                <tr>
+                    <td>Grammarly</td>
+                    <td>Grammarly Inc.</td>
+                    <td>التعلم - الكتابة</td>
+                    <td>نعم</td>
+                    <td><button onclick="toggleDetails('details3')">عرض التفاصيل</button></td>
+                </tr>
+                <tr id="details3" class="details">
+                    <td colspan="5">
+
+                        <p><strong>عنوان الموقع الإلكتروني:</strong> <a
+                                href="https://www.grammarly.com">https://www.grammarly.com</a><br><br>
+                            <strong>وصف:</strong> مساعد ذكي يجيب على الأسئلة ويكتب النصوص ويشرح المفاهيم بلغة طبيعية.
+                            <br><br>
+                        <div class="video-wrapper">
+                            <video id="video-chatgpt" width="560" height="315" controls preload="none">
+                                <source src="videos/159939-820010960_small.mp4" type="video/mp4">
+                                متصفحك لا يدعم الفيديو.
+                            </video>
+                            <br><br><img src="images/Grammarly.png" alt="Grammarly" width="120"><br>
+                    </td>
+                </tr>
+                <!-- التطبيث الرابع  -->
+                <tr>
+                    <td>DeepSeek</td>
+                    <td>DeepSeek AI</td>
+                    <td>التحليل والبحث الذكي</td>
+                    <td>نعم</td>
+                    <td><button onclick="toggleDetails('details4')">إظهار التفاصيل</button></td>
+                </tr>
+                <tr id="details4" class="details">
+                    <td colspan="5">
+
+                        <p><strong>عنوان الموقع الإلكتروني:</strong> <a
+                                href="https://www.deepseek.com">https://www.deepseek.com</a><br><br>
+                            <strong>وصف:</strong> منصة ذكاء اصطناعي متقدمة قادرة على تحليل البيانات الضخمة وفهم النصوص
+                            وتوليد إجابات دقيقة وسريعة، تُستخدم في الأبحاث والتعليم والمساعدة الذكية. <br><br>
+                        <div class="video-wrapper">
+                            <video id="video-chatgpt" width="560" height="315" controls preload="none">
+                                <source src="videos/171185-844787983_small.mp4" type="video/mp4">
+                                متصفحك لا يدعم الفيديو.
+                            </video>
+                            <br><br><img src="images/deepseek.webp" alt="DeepSeek" width="120"><br>
+                    </td>
+                </tr>
+
+                <!-- التطبيق الخامس -->
+                <tr>
+                    <td>Siri</td>
+                    <td>Apple</td>
+                    <td>المساعدة الشخصية</td>
+                    <td>نعم</td>
+                    <td><button onclick="toggleDetails('details5')">عرض التفاصيل</button></td>
+                </tr>
+                <tr id="details5" class="details">
+                    <td colspan="5">
+
+                        <p><strong>عنوان الموقع الإلكتروني:</strong> <a
+                                href="https://www.apple.com/siri">https://www.apple.com/siri</a><br><br>
+                            <strong>وصف:</strong> مساعد صوتي ذكي من Apple يستجيب للأوامر وينفّذ المهام اليومية. <br><br>
+                        <div class="video-wrapper">
+                            <video id="video-chatgpt" width="560" height="315" controls preload="none">
+                                <source src="videos/20251015-2147-50.5534256.mp4" type="video/mp4">
+                                متصفحك لا يدعم الفيديو.
+                            </video>
+                            <br><br><img src="images/apple.webp" alt="Siri" width="120"><br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 جميع الحقوق محفوظة - مشروع مادة تصميم وتطوير تطبيقات الويب</p>
+    </footer>
+    </section>
+</body>
+
+<script src="js/myFunctions.js"></script>
+
+</html>
